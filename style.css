@@ -136,10 +136,6 @@ article {
   margin: 15px;
 }
 
-#my-element {
-  cursor: url("pata.png");
-}
-
 /*esquerda*/
 .gife {
   height: 150px;
@@ -156,13 +152,6 @@ article {
   border: 2px solid #ffaad7;
 }
 
-/*direita*/
-.gifd {
-  height: 150px;
-  margin-right: 20px;
-  float: right;
-}
-
 .linguagens {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -176,15 +165,54 @@ article {
 }
 
 @media (max-width: 768px) {
+  header h3 {
+    font-size: 28px;
+  }
+
+  header h2 {
+    font-size: 35px;
+  }
+
   main {
+    max-width: 95%;
     padding: 10px;
   }
 
-  h2 {
-    font-size: 20px;
+  .titulo {
+    font-size: 25px;
   }
 
-  h3 {
-    font-size: 16px;
+  .imagem {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .contato {
+    height: 30px;
+    padding: 5px;
+  }
+
+  .contato-menor {
+    height: 15px;
+  }
+
+  .linguagens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .esq {
+    text-align: left;
+  }
+
+  .gifc {
+    margin: auto;
+    float: none;
+  }
+
+  .gifc,
+  .gife {
+    height: auto;
+    max-width: 100%;
+    float: none;
   }
 }
